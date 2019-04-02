@@ -1,0 +1,21 @@
+<h1>Tenants#show</h1>
+
+<p id="notice"><%= notice %></p>
+<p>
+  <b>title:</b>
+  <%= current_user.tenant.phone %>
+</p>
+
+<p>
+  <b>bio:</b>
+  <%= current_user.tenant.address %>
+</p>
+
+
+<%= link_to 'Edit', edit_tenant_path(current_user.tenant.id) %>
+
+<%= link_to 'delete', tenant_path(current_user.tenant.id), method: :delete %>
+<br>
+<br>
+<br>
+<%= link_to 'Landing page', root_path %>
