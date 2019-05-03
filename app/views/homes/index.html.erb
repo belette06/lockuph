@@ -1,0 +1,17 @@
+<h1>index maisons</h1>
+
+
+<% @homes.each do |f| %>
+  <%= f.name %><br>
+  <%= f.description %><br>
+
+  <%= link_to 'Edit', edit_home_path(f.id) %>
+
+  <%= link_to 'delete', home_path(f.id), method: :delete %>
+  <hr>
+<% end %>
+
+
+<br>
+<br>
+<%= link_to 'Landing page', root_path %>

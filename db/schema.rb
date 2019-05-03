@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_26_143843) do
+ActiveRecord::Schema.define(version: 2019_04_28_022621) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,23 @@ ActiveRecord::Schema.define(version: 2019_03_26_143843) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
+  end
+
+  create_table "appointements", force: :cascade do |t|
+    t.boolean "completed"
+    t.daterange "reservation"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "homes", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.boolean "online", default: false
+    t.bigint "proprietor_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["proprietor_id"], name: "index_homes_on_proprietor_id"
   end
 
   create_table "professionals", force: :cascade do |t|
@@ -48,6 +65,13 @@ ActiveRecord::Schema.define(version: 2019_03_26_143843) do
     t.index ["user_id"], name: "index_proprietors_on_user_id"
   end
 
+  create_table "tenant_homes", force: :cascade do |t|
+    t.bigint "tenant_id"
+    t.bigint "home_id"
+    t.index ["home_id"], name: "index_tenant_homes_on_home_id"
+    t.index ["tenant_id"], name: "index_tenant_homes_on_tenant_id"
+  end
+
   create_table "tenants", force: :cascade do |t|
     t.bigint "user_id"
     t.string "phone"
@@ -69,6 +93,9 @@ ActiveRecord::Schema.define(version: 2019_03_26_143843) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "homes", "proprietors"
   add_foreign_key "proprietors", "users"
+  add_foreign_key "tenant_homes", "homes"
+  add_foreign_key "tenant_homes", "tenants"
   add_foreign_key "tenants", "users"
 end

@@ -1,0 +1,15 @@
+<%= form_with model: @home do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name%>
+<br>
+  <%= f.label :description %>
+  <%= f.text_field :description%>
+  <br>
+  <%= f.label :Online %>
+  <%= f.check_box :online, {},  "true", "false" %>
+
+  <br>
+  <%= f.submit %>
+
+<% end %>

@@ -1,0 +1,63 @@
+
+<% if user_signed_in? %>
+  <%if user_session %>
+    <!--
+  <% if @proprietor.present?%>
+
+          <h3>tu es un Proprietaire</h3>
+          <% link_to 'Espace le proprietaire', proprietor_path(@proprietor.id), style: "margin-left: 40%" %>
+          <br>
+        <%else %>
+          <% link_to 'Cree le proprietaire', new_proprietor_path, style: "margin-left: 40%" %>
+    <%end %>
+
+          <hr>
+
+      <%= link_to 'ajouter une Maison', new_home_path, style: "margin-right: 10%" %><br>
+
+      <% if @homes %>
+        <%= link_to 'Espace Maison', homes_path, style: "margin-right: 10%" %>
+      <h3>Maison</h3>
+        <ul>
+          <% @homes.each do |f| %>
+            <li>
+              <%= f.name %><br>
+              <%= f.description %><br>
+            </li>
+            <hr>
+          <% end %>
+
+        </ul>
+      <%end %>
+
+  <%end %>
+  <hr>
+  <hr>
+-->
+
+
+
+  <% if current_user.tenant.present?%>
+
+        <h3>tu es un Locataire</h3>
+        <%= link_to 'Espace le locataire', tenant_path(current_user.tenant.id), style: "margin-left: 40%" %>
+        <br>
+
+    <hr>
+  <% @homes.each do |f| %>
+    <% if f.online %>
+    <%= f.name %>
+    <%= f.description %>
+      <br>
+    <%end %>
+    <%end %>
+
+  <%else %>
+        <%= link_to 'Cree le locataire', new_tenant_path, style: "margin-left: 40%" %>
+        <hr>
+  <%end %>
+
+
+<%end %>
+
+

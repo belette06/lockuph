@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 include Accessible
 skip_before_action :check_user, only: :destroy
 skip_before_action :check_professional, only: :destroy

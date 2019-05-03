@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 include Accessible
 
 class Professionals::RegistrationsController < Devise::RegistrationsController

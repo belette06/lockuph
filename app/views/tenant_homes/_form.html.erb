@@ -1,0 +1,33 @@
+
+<%= form_with(model: tenant) do |form| %>
+
+  <% if @tenant_home.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tenant_home.errors.count, "error") %> prohibited this booking from being saved:</h2>
+
+      <ul>
+        <% @tenant_home.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>@tenant_home
+  <% end %>
+
+  <div class="field">
+    <%= form.label :tenant%><br />
+    <%= form.collection_select :tenant, Tenant.order(:phone), :id, :phone %><br/>
+    or create
+      <%= form.fields_for :new_tenant do |tenant_fields| %>
+      <%= tenant_fields.text_field :phone , placeholder: "0661359900"%>
+        address: <%= tenant_fields.text_field :address, placeholder: "rue de la cabane" %>
+      <%= tenant_fields.sumbit %>
+    <% end %>
+
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+<%end %>

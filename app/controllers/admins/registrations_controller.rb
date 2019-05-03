@@ -1,7 +1,8 @@
 # frozen_string_literal: true
+
 include Accessible
-skip_before_action :check_user, except: [:new, :create]
-skip_before_action :check_professional, except: [:new, :create]
+skip_before_action :check_user, except: %i[new create]
+skip_before_action :check_professional, except: %i[new create]
 
 class Admins::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]

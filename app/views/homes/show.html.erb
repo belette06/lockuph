@@ -1,0 +1,32 @@
+<h1>Homes#show</h1>
+<p>Find me in app/views/homes/show.html.erb</p>
+
+<p id="notice"><%= notice %></p>
+<p>
+  <b>title:</b>
+  <%= @home.name %>
+</p>
+
+<p>
+  <b>bio:</b>
+  <%=  @home.description %>
+</p>
+
+
+<p>
+  <b>Online:</b>
+  <%if  @home.online == true %>
+  <%=  "Home is Online"  %>
+    <%else %>
+  <%=   "Home is Offline" %>
+    <%end %>
+</p>
+
+
+<%= link_to 'Edit', edit_home_path(@home.id) %>
+
+<%= link_to 'delete', home_path(@home.id), method: :delete %>
+<br>
+<br>
+<br>
+<%= link_to 'Landing page', root_path %>

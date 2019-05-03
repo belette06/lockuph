@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tenant:</strong>
+  <%= @tenant_home.tenant_id %>
+</p>
+
+<p>
+  <strong>Home:</strong>
+  <%= @tenant_home.home_id %>
+</p>
+
+<%= link_to 'Edit', edit_tenant_home_path(@tenant_home) %> |
+<%= link_to 'Back', tanant_homes_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_in: 2019-04-04
+  date_out: 2019-04-04
+  tenant: one
+  proprietor: one
+
+two:
+  date_in: 2019-04-04
+  date_out: 2019-04-04
+  tenant: two
+  proprietor: two
