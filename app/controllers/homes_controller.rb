@@ -5,7 +5,7 @@ class HomesController < ApplicationController
 
   def index
     @proprietor = current_user.proprietor
-    @homes = @proprietor.homes.all
+    @homes = @proprietor.homes
   end
 
   def show; end
@@ -35,7 +35,9 @@ class HomesController < ApplicationController
   end
 
   def destroy
-    redirect_to @home, notice: 'destroy..' if @home.destroy(params_homes)
+    if @home.delete
+      redirect_to @home, notice: 'destroy..'
+    end
   end
 
   private
@@ -45,7 +47,6 @@ class HomesController < ApplicationController
   end
 
   def set_homes
-    @proprietor = current_user.proprietor
-    @home = @proprietor.homes.find(params[:id])
+    @home = Home.find(params[:id])
   end
 end

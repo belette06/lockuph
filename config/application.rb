@@ -18,4 +18,7 @@ module Homelockup
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
   end
+  Raven.configure do |config|
+    config.dsn = 'https://715da3d3562b4f969150c1b40d6ab8914bcddae872644fefb1e67f4121359b2d0@sentry.io/1459185'
+  end
 end

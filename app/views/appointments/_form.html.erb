@@ -1,0 +1,22 @@
+require 'pry'
+
+<%= form_for [:home, @appointment]  do |f| %>
+
+
+  <div class="field">
+    <%= f.label :tenant_id %><br />
+    <%= f.collection_select :tenant, Tenant.order(:address), :id, :address %>
+    or create one:
+    <%= f.text_field :new_tenant_phone  %>
+    <%= f.text_field :new_tenant_address%>
+  </div>
+
+  <div class="field">
+    <%= f.label :completed %><br>
+    <%= f.check_box :completed %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

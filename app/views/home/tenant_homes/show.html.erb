@@ -1,0 +1,20 @@
+<h1>Relation <%= @tenant_home.id%></h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tenant:</strong>
+ ID: <%= @tenant_home.tenant.id %><br/>
+ Phone: <%= @tenant_home.tenant.phone %><br />
+ Address: <%= @tenant_home.tenant.address %><br />
+ Created: <%= @tenant_home.tenant.created_at %>
+</p>
+
+<p>
+  <strong>Home:</strong>
+  ID: <%= @tenant_home.home.id %><br/>
+  Name <%= @tenant_home.home.name %><br/>
+  Description: <%= @tenant_home.home.description %>
+</p>
+
+<%= link_to 'Edit',  edit_home_tenant_home_path(@tenant_home) %> |
+<%= link_to 'Back', root_path %>

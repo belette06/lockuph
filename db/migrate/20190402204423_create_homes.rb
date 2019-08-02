@@ -10,13 +10,5 @@ class CreateHomes < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
-
-    def up
-      change_column :appointments, :online, :boolean, default: false
-    end
-
-    def down
-      change_column :appointments, :online, :boolean, default: nil
-    end
-  end
+end
 end

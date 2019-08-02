@@ -7,4 +7,25 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.destroy_all
+Proprietor.destroy_all
+
+(1..10).to_a.each do |i|
+  puts "Creating User #{i}"
+  User.create!(
+      email: "#{Faker::Internet.unique.username}@yopmail.com",
+      password: "password"
+  )
+end
+
+(1..10).to_a.each do |i|
+ puts "proprietor create #{i}"
+  Proprietor.create!(
+      phone: "#{Faker::Number.number(10)}",
+      address: "#{Faker::Name.first_name}"
+
+  )
+end
+
+
 

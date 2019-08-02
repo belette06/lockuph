@@ -6,7 +6,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_one :proprietor
+  has_one :proprietor, class_name: 'Proprietor'
   accepts_nested_attributes_for :proprietor
 
   has_one :tenant

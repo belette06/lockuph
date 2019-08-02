@@ -1,32 +1,28 @@
-<h1>Homes#show</h1>
-<p>Find me in app/views/homes/show.html.erb</p>
 
 <p id="notice"><%= notice %></p>
-<p>
-  <b>title:</b>
-  <%= @home.name %>
-</p>
 
-<p>
-  <b>bio:</b>
-  <%=  @home.description %>
-</p>
+<h1>HOMES #show</h1>
+<table>
+  <tbody>
+    <tr>
+      <td><%= @home.name %></td>
+      <td><%= @home.description %></td>
+      <td>
+        <%if  @home.online == true %>
+          <%= "Home is Online"  %>
+        <%else %>
+          <%= "Home is Offline" %>
+        <%end %>
+      </td>
+      <td><%= link_to 'index', home_appointments_path(@home.id) %></td>
+      <td><%= link_to 'Edit',  edit_home_appointment_path(@home.id) %></td>
+      <td><%= link_to 'Destroy', @home, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  </tbody>
+</table>
 
-
-<p>
-  <b>Online:</b>
-  <%if  @home.online == true %>
-  <%=  "Home is Online"  %>
-    <%else %>
-  <%=   "Home is Offline" %>
-    <%end %>
-</p>
-
-
-<%= link_to 'Edit', edit_home_path(@home.id) %>
-
-<%= link_to 'delete', home_path(@home.id), method: :delete %>
 <br>
-<br>
-<br>
+
 <%= link_to 'Landing page', root_path %>
+
+

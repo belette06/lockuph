@@ -185,7 +185,7 @@ h3 i {
 
 .header-content {
     color: #FFF;
-    padding-top: 33vh;
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -210,7 +210,7 @@ h3 i {
 }
 
 .navbar {
-    background: none;
+    background-color: black;
     border: none;
     transition: background 0.8s;
 }
