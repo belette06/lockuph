@@ -2,77 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2befb64-166f-47d0-9a02-55b7e982984c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/homes/tenant_homes_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/appointment.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/appointments/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/appointments/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/tenant_homes/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/tenant_homes/_form_new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/tenant_homes/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/tenant_homes/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/tenant_homes/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/tenant_homes/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/controllers/appointments_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/03624e46-89d9-40bd-ba17-47e131d4b922.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/03624e46-89d9-40bd-ba17-47e131d4b922.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/03624e46-89d9-40bd-ba17-47e131d4b922/storage_v2/_src_/database/homelockup_development.ofJN8w.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/03624e46-89d9-40bd-ba17-47e131d4b922/storage_v2/_src_/database/homelockup_development.ofJN8w/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/homelockup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/homelockup.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/appointements.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/appointments.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/tenant_homes.coffee" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/appointements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/appointments.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/tenant_homes.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/appointements_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/appointments_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/accessible.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/accessible.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/homes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/homes_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/proprietors_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/proprietors_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/tenant_homes_controller.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/appointements_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/appointments_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/tenant_homes_helper.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/appointement.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/home.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/home.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/proprietor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/proprietor.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/tenant.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/tenant.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/tenant_home.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/appointements/_form.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/appointements/edit.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/appointements/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/appointments/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/appointements/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/appointments/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/appointements/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/appointments/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/homes/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/homes/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/proprietors/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/proprietors/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/static_pages/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/static_pages/_navbar.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/static_pages/_user.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/static_pages/_user.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/static_pages/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/static_pages/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tenant_homes/_form.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tenant_homes/edit.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tenant_homes/index.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tenant_homes/index.json.jbuilder" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tenant_homes/new.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tenant_homes/show.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tenant_homes/show.json.jbuilder" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/spring.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/spring.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190402204423_create_homes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190402204423_create_homes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190428014156_create_appointements.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190428014156_create_appointments.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190428022621_create_tenant_homes.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/appointements_controller_spec.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/tenant_homes_controller_spec.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/helpers/appointements_helper_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/helpers/appointments_helper_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/helpers/tenant_homes_helper_spec.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/appointement_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/appointment_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/tenant_home_spec.rb" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -315,7 +245,7 @@
       <workItem from="1564694328847" duration="47000" />
       <workItem from="1564694406229" duration="257000" />
       <workItem from="1564694898674" duration="2765000" />
-      <workItem from="1564735901777" duration="644000" />
+      <workItem from="1564735901777" duration="1271000" />
     </task>
     <servers />
   </component>
