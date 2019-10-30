@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # ruby File.read('./.ruby-version')
 File.read('./.ruby-version')
 gem "sentry-raven"
-gem 'devise', '~> 4.6'
+gem 'devise', '~> 4.7'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.2'
