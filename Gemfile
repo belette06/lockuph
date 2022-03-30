@@ -8,7 +8,7 @@ File.read('./.ruby-version')
 gem "sentry-raven"
 gem 'devise', '~> 4.6'
 gem 'pg', '>= 0.18', '< 2.0'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.3'
 gem 'rails', '~> 5.2.2'
 gem 'rubocop', '~> 0.67.2'
 gem 'rubocop-performance'
